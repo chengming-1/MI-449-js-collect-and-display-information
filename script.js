@@ -14,12 +14,12 @@ const profile = function () {
   const PHONE_NUMBER = phoneInput.value
 
   preview.innerHTML =
-    ' Hi, my name is ' + '<em>' + firstname + ' ' + lastname + '</em>.\n' +
+    '<h1>' + 'Hi, my name is ' + '<em>' + firstname + ' ' + lastname + '</em>' + '</h1>.\n' +
     '<p>' + description + '</p>\n' + '<p>' +
     ' If you\'re interested in a date, you can email me at ' +
-    '<a href="mailto:EMAIL_ADDRESS" target="_blank">' + EMAIL_ADDRESS + '</a>\n' +
+    '<a href="mailto:" target="_blank">' + EMAIL_ADDRESS + '</a>\n' +
     ' or give me a call at ' +
-    '<a href="tel:PHONE_NUMBER" target="_blank">' + PHONE_NUMBER + '</a>.\n' +
+    '<a href="tel:" target="_blank">' + PHONE_NUMBER + '</a>.\n' +
     '</p>'
   rawHtml.textContent = preview.innerHTML
 }
